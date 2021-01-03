@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Les jeux d'exercice</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="header" class="header" role="banner">
+        <img src="images/logo.png" alt="logo" id="logo" width="150px" />
+        <a href="test.html #caderoutheque" id="titre" class="carre">LA CADEROUTHEQUE</a>
+        <a href="test.html #SystEsar" id="esar" class="carre">LE SYSTEME ESAR</a>
+        <a href="test.html #categories" id="categorie" class="carre">LES CATEGORIES</a>
+        <a href="form.html" id="formulaire" class="carre">AIDEZ NOUS</a>
+    </header>
+    <div id="formulaireGlobal" class="block">
+        <div id="formulaireIntro" class="block">
+            <h2>Ajoutez vos suggestions</h2>
+            <p>Ce projet est un projet participatif. Nous vous invitons à nous soumettre vos suggestions ci dessous :
+            </p>
+        </div>
+        <br>
+        <div id="formulaire1" class="block">
+            <form method="post" id="form1" class="formulaire" action="test.php">
+                <p>
+                    <fieldset class="fieldset">
+                        <legend>Vos coordonnées</legend>
+
+                         <label for="pseudo">Votre nom et prénom : </label>
+                          <input type="text" id="pseudo" name="pseudo" size="30" placeholder="John Smith" required/>
+                          <br />
+                          <label for="mail">Votre adresse mail : </label>
+                         <input type="email" id="mail" name="mail" size="40" placeholder="john.du.06@gmail.com" /> 
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend>Votre idée d'activité</legend>
+
+                        <label for="idea">Votre idée d'activité : </label>
+                        <input type="text" id="idea" name="idea" size="40" placeholder="parcours sensoriel" />
+                        <br>
+                    
+                        Pour quelle tranche âge conseillez-vous cette activité : 
+                        <br />
+                        <input type="checkbox" id="0.6mois" name="0.6mois" id="0.6mois" />
+                        <label for="0.6mois"> 0-6mois  </label>
+                    
+                        <input type="checkbox" id="6-12mois" name="6-12mois" id="6-12mois" />
+                        <label for="6-12mois"> 6-12mois  </label>
+                    
+                        <input type="checkbox" id="12-18mois" name="12-18mois" id="12-18mois" />
+                        <label for="12-18mois"> 12-18mois</label>
+
+                        <input type="checkbox" id="18-24mois" name="18-24mois" id="18-24mois" />
+                        <label for="18-24mois"> 18-24mois</label>
+
+                        <input type="checkbox" id="2.3ans" name="2.3ans" id="2.3mois" />
+                        <label for="2.3ans"> 2-3ans</label> 
+                        <br/>
+
+                        <label for="materiel">Matériel nécessaire : </label> <br>
+                        <textarea id="materiel" name="materiel" required></textarea>
+                    
+                        <br>
+                        <label for="classESAR">Catégorie ESAR : </label>
+                        <select name="classESAR" id="classESAR" required>
+                            <optgroup label="classes ESAR">
+                                <option value="JeuxExercice">Jeux d'exercice</option>
+                                <option value="Jeuxsymboliques">Jeux symboliques</option>
+                                <option value="JeuxAssemblage">Jeux d'assemblage</option>
+                                <option value="JeuxRegles">Jeux de règles</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <input type="button" value="Envoyer" class=""/>
+                </p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
